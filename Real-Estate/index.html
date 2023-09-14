@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- nav bar -->
+    <div id="nav-bar">
+        <!-- logo -->
+        <div class="logo" id="logo_border">
+            <img src="./css/image/logo.png" alt="">
+            <div class="menu-btn-container">
+                <div class="menu-icon-container" onclick="menu_open(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>   
+        </div>
+        </div>
+        <!-- all link -->
+        <div class="all-link" id="menu-list">
+            <ul>
+                <li><a href="#header-wrapper" onclick="link_hide(x)">Home</a></li>
+                <li><a href="#collection-section" onclick="link_hide(x)">About</a></li>
+                <li><a href="#" onclick="dropdownFunction()" class="dropbtn">Pages <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#our-neighborhood-section" onclick="link_hide(x)">Gallery</a>
+                        <a href="#project-community" onclick="link_hide(x)">Project</a>
+                        <a href="#blog-section-wrapper" onclick="link_hide(x)">Blog</a>
+                        <a href="#">Login</a>
+                      </div>
+                </li>
+                <li><a href="#upcoming-event" onclick="link_hide(x)">Event</a></li>
+                <li><a href="#newsletter-subscribe" onclick="link_hide(x)">Contact</a></li>
+                <li><a href="#" id="join-now-btn" onclick="link_hide(x)">Join Now</a></li>
+            </ul>
+        </div>
+        <!-- join now btn -->
+        <div class="nav-left-btn">
+            <a href="#">Join Now</a>
+        </div>
+    </div>
+    <!-- header section -->
+    <div id="header-wrapper" onclick="link_hide(x)">
+        <!-- header left content -->
+        <div class="left-content">
+            <h1>Ensure the Best Facilities for the Community</h1>
+            <p>We the are <a href="#">Resideo</a> is the Real estate association helps community people to solve their problem, add benifits and latest facilities</p><br>
+            <!-- learn more btn -->
+            <div class="global-btn learn-more-btn">
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <!-- right hero img -->
+        <div class="right-hero-img">
+            <!-- <div class="img">
+                <img src="./css/image/Hero-Image.png" alt="hero image" width="100%">
+            </div> -->
+        </div>
+    </div>
+    <!-- collection section -->
+    <div id="collection-section">
+        <div class="collection-img">
+            <img src="./css/image/collection-image.png" alt="" width="100%">
+        </div>
+        <div class="collection-content">
+            <h1>We make sure the Best <span> Quality</span> of <span>Living</span> in our Neighborhood</h1>
+            <h3>An HOA is a legal entity that is created when a group of property owners agree to share responsibility for the maintenance and upkeep of property</h3>
+            <p>Homeowners associations are organizations that were created to help maintain common areas in residential communities. They often provide services such as landscaping, trash removal, snow removal and security. It is often governed by an elected board of directors, who are responsible for enforcing the covenants, conditions and restrictions (CC&Rs) that govern the community.</p>
+            <div class="counter-wrapper">
+                <div class="counter">
+                    <h2>1200+</h2>
+                    <p>Community People</p>
+                </div>
+                <div class="counter">
+                    <h2>120+</h2>
+                    <p>Houses</p>
+                </div>
+                <div class="counter">
+                    <h2>20+</h2>
+                    <p>Years</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects for Community -->
+    <div id="project-community">
+        <div class="project-details">
+            <h1><span>Projects</span> for Community</h1>
+            <p>We the are Resideo is the Real estate association helps community people to solve their problem, add benifits and latest facilities</p>
+            <div id="project-list-wrapper">
+                <div class="left-project-list">
+                    <div class="project">
+                        <div></div>
+                        <h2>Sports Club</h2>
+                    </div>
+                    <div class="project">
+                        <div></div>
+                        <h2>Flower Yard</h2>
+                    </div>
+                    <div class="project">
+                        <div></div>
+                        <h2>Swimming Pool</h2>
+                    </div>
+                </div>
+                <div class="right-project-list">
+                    <div class="project">
+                        <div></div>
+                        <h2>Gym Center</h2>
+                    </div>
+                    <div class="project">
+                        <div></div>
+                        <h2>BBQ Place</h2>
+                    </div>
+                    <div class="project">
+                        <div></div>
+                        <h2>Play Ground</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="global-btn explore">
+                <a href="#">Explore</a>
+            </div>
+        </div>
+        <div class="project-img">
+            <div class="centre-block"></div>
+            <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./css/image/sports club.png" alt="" >
+          </div>
+          <div class="swiper-slide">
+            <img src="./css/image/playground.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./css/image/bbq.png" alt="">
+        </div>
+          <div class="swiper-slide">
+            <img src="./css/image/swimming pool.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./css/image/project-slider-image-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+  <div class="low-opacity-text">Projects</div>
+        </div>
+    </div>
+    <!-- homestic assocition section -->
+    <div id="homestic-assocition-section">
+        <div class="homestic-content">
+            <h1>Why <span>Homestic</span> Association</h1>
+            <p>We the are Resideo association the Real estate association helps great community people to ensure their all rights and facilities get properly as well as ensure the all accessibilities for all</p>
+            <div class="global-btn join-now-btn-2">
+                <a href="#">Join Now</a>
+            </div>
+        </div>
+        <div class="homestic-block-wrapper">
+            <div class="homestic-block">
+                <div class="bac-div"></div>
+                <div class="homestic-block-content">
+                <h1>01.</h1>
+                <h2>Community Buildup</h2>
+                <p>We build our Community more strong and make it helpful for our community members and it will be great opportunity for all</p>
+            </div></div>
+            <div class="homestic-block">
+                <div class="bac-div"></div>
+                <div class="homestic-block-content">
+                <h1>02.</h1>
+                <h2>Easy Solutions</h2>
+                <p>Ensure the most common sulutions of the problems Community more strong and make it helpful for our community</p>
+            </div></div>
+            <div class="homestic-block">
+                <div class="bac-div"></div>
+                <div class="homestic-block-content">
+                <h1>03.</h1>
+                <h2>Community Buildup</h2>
+                <p>Neighbourly Community more strong and make it helpful for our community members and it will be great opportunity for all</p>
+            </div></div>
+            <div class="homestic-block">
+                <div class="bac-div"></div>
+                <div class="homestic-block-content">
+                <h1>04.</h1>
+                <h2>Community Buildup</h2>
+                <p>Accessibility our Community more strong and make it helpful for our community  members and it will be great opportunity</p>
+            </div></div>
+        </div>
+    </div>
+    <!-- Our Neighborhood -->
+    <div id="our-neighborhood-section" class="">
+        <div class="left-gallery-img">
+            <div class="bac-gallery-div"><h1>Our Gallery</h1></div>
+            <div class="gallery-img">
+                <img src="./css/image/gallery-1.jpg" alt="" width="100%">
+                <img src="./css/image/gallery-2.jpg" alt="" width="100%">
+                <img src="./css/image/gallery-3.jpg" alt="" width="100%">
+                <img src="./css/image/gallery-4.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <div class="gallery-content">
+            <h1>Have a <span>Glance</span> at Some <span>Pictures</span> of Life Around Our <span>Neighborhood</span></h1>
+            <p>A Homeowner Association is a group of homeowners who live in a specific neighborhood and are responsible for the upkeep of the area. They are also responsible for enforcing the guidelines set by the governing body such as zoning laws, architectural standards, and common areas.</p>
+            <div class="global-btn view-all-btn">
+                <a href="#">View All</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- upcoming event -->
+    <div id="upcoming-event">
+        <h1>Let’s <span>check</span> our Upcomming <span>Events</span></h1>
+    </div>
+    <div id="events-collection-list">
+        <div class="event-collection">
+            <div class="events-img">
+                <img src="./css/image/event-thumbs-1.jpg" alt="" width="100%">
+            </div>
+            <div class="event-contents">
+                <h2>Morning Yoga</h2>
+                <p>Time:12.01 am To 1.00 pm</p>
+                <p>Place:Garden Yoga Center</p>
+                <h1>August 25, 2022</h1>
+            </div>
+        </div>
+        <div class="event-collection">
+            <div class="events-img">
+                <img src="./css/image/event-thumbs-3.jpg" alt="" width="100%">
+            </div>
+            <div class="event-contents">
+                <h2>Monthly Meeting</h2>
+                <p>Time:05.01 am To 7.00 pm</p>
+                <p>Place:Monthly Meeting Center</p>
+                <h1>August 25, 2022</h1>
+            </div>
+        </div>
+        <div class="event-collection">
+            <div class="events-img">
+                <img src="./css/image/event-thumbs-2.jpg" alt="" width="100%">
+            </div>
+            <div class="event-contents">
+                <h2>BBQ Party</h2>
+                <p>Time:10.01 am To 12.00 pm</p>
+                <p>Place:Garden Field BBQ Center</p>
+                <h1>August 25, 2022</h1>
+            </div>
+        </div>
+        <div class="event-collection">
+            <div class="events-img">
+                <img src="./css/image/event-thumbs-4.jpg" alt="" width="100%">
+            </div>
+            <div class="event-contents">
+                <h2>Christmas Party</h2>
+                <p>Time:12.01 am To 2.00 pm</p>
+                <p>Place:Christmas Party Center</p>
+                <h1>August 25, 2022</h1>
+            </div>
+        </div>
+    </div>
+    <!-- blog section -->
+
+    <div id="blog-section-wrapper">
+        <div class="blog-wrapper">
+            <h1>Our Latest <span>Blog</span> Post</h1>
+            <p>We the are Resideo association the Real estate association helps great community people to ensure their all rights and facilities get properly as well as ensure the all accessibilities for all</p>
+            <div class="global-btn view-all-btn">
+                <a href="#">View More</a>
+            </div>
+        </div>
+        <div class="post-img-wrapper">
+        <div class="post-image-wrapper">
+            <div class="img">
+                <img src="./css/image/blog-feature-image.jpg" alt="" width="100%">
+            </div>
+            <p>Luther Mathewes August 25, 2022</p>
+            <h3>HOA Community Emergency Preparedness - What you need to khow about Community</h3>
+        </div>
+        <div class="popular-post-wrapper">
+            <div class="popular-post">
+            <p>Devid Smith August 27, 2022</p>
+            <h3>Homeowner Association General Meeting</h3>
+            </div>
+            <div class="popular-post">
+            <p>Stephen Fleming August 23, 2022</p>
+            <h3>How to increase benifit of Community people</h3>
+            </div>
+            <div class="popular-post">
+            <p>Ethan Haslod August 21, 2022</p>
+            <h3>6 Green Initiative for Homeowerns Associations</h3>
+            </div>
+            <div class="popular-post">
+            <p>Stephen Fleming August 19, 2022</p>
+            <h3>How to increase benifit of Community Man</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- newsletter subscribe -->
+    <div id="newsletter-subscribe">
+        <h1>Subscribe <span>Newsletters</span></h1>
+        <p>To get latest update for our offers, meetings, events, projects <br> subscribe our newletter right now</p>
+        <div class="email">
+            <form action="#" autocomplete="off">
+       <input type="email" name="email" id="email" placeholder="Your email here..." required>
+             <button><i class="fa-solid fa-arrow-right-long"></i></button>
+    </form></div>
+    </div>
+    <!-- footer section wrapper -->
+    <div id="footer-section">
+        <div class="footer-text">
+            <img src="./css/image/logo.png" alt="">
+            <p>Resideo association the Real estate association helps great community people to ensure their all rights and facilities</p>
+        </div>
+        <div class="all-link-wrapper">
+            <div class="all-link2">
+                <h3>Quick Link</h3>
+                <a href="#">About us</a>
+                <a href="#">Community</a>
+                <a href="#">Blog Post</a>
+                <a href="#">Events</a>
+                <a href="#">Meeting</a>
+            </div>
+            <div class="all-link2">
+                <h3>Information</h3>
+                <a href="#">Join Community</a>
+                <a href="#">Team</a>
+                <a href="#">Gallery</a>
+                <a href="#">Project</a>
+                <a href="#">Login</a>
+            </div>
+            <div class="all-link2">
+                <h3>Information</h3>
+                <a href="#">Join Community</a>
+                <a href="#">Team</a>
+                <a href="#">Gallery</a>
+                <a href="#">Project</a>
+                <a href="#">Login</a>
+            </div>
+            <div class="all-link2">
+                <h3>Contact info</h3>
+               <h4 class="address">256, Park Street, Central Road Strew House, New York</h4>
+               <h4 class="ecolor">Info@example.com</h4>
+               <h4 class="ecolor">www.example.com</h4>
+               <h4>Copy by Webflow</h4>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <p>© 2022 <a href="#">Brandbes</a>. All <small>rights reserved</small></p>
+        <div class="social-link">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-behance"></i></a>
+        </div>
+    </footer>
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- main javascript -->
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
